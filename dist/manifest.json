@@ -1,0 +1,5 @@
+{
+  "index.js": "/dist/js/index.js",
+  "runtime.js": "/dist/js/runtime.js",
+  "entrypoints.json": "/dist/entrypoints.json"
+}

@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Papile - Front End Engineer</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Import Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- Import tailwind -->
+    <link href="dist/css/index.css" rel="stylesheet">
+</head>
+
+<body class="relative bg-purple-bg text-black dark:text-white dark:bg-purple-medium selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black">
+    <header
+        class="navbar fixed sm:bottom-0 lg:bottom-auto z-50 bg-purple-bg dark:bg-purple-medium w-full p-16 transition shadow-none duration-500">
+        <nav class="flex justify-between items-center max-w-[1020px] lg:pt-8 lg:pb-8 w-full m-auto">
+            <a class="navbar-logo text-s1 font-bold hover:text-purple transition" href="#home">
+                henrique.papile
+            </a>
+
+            <div class="flex gap-32">
+                <ul
+                    class="navbar-mobile w-full bg-purple-bg dark:bg-purple-medium lg:bg-inherit lg:flex items-center flex-wrap transition ease-out duration-300 sm:gap-8 sm:gap-y-32 lg:gap-40 sm:fixed lg:relative sm:bottom-0 sm:left-0 sm:grid sm:grid-cols-3 sm:p-16 sm:pt-32 sm:pb-60 lg:p-0 sm:rounded-t-20 lg:rounded-t-0 lg:shadow-none sm:translate-y-full lg:translate-y-0 z-100">
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 lg:hidden sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#home"><i class="uil text-icon uil-home"></i>Início</a>
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#about"><i class="uil text-icon lg:hidden uil-user"></i>Sobre</a>
+                    </li>
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#skills"><i class="uil text-icon lg:hidden uil-file-alt"></i>Habilidades</a>
+                    </li>
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#experiences"><i class="uil text-icon lg:hidden uil-briefcase"></i>Experiências</a>
+                    </li>
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#projects"><i class="uil text-icon lg:hidden uil-scenery"></i>Projetos</a></li>
+                    </li>
+                    <li><a class="flex sm:flex-col sm:items-center lg:gap-8 sm:text-s0 lg:text-s1 font-bold hover:text-purple transition"
+                            href="#contact"><i class="uil text-icon lg:hidden uil-message"></i>Contato</a>
+                    </li>
+                    <li class="absolute bottom-16 right-16 lg:hidden"><a
+                            class="flex gap-8 text-s2 font-bold hover:text-purple cursor-pointer transition"><i
+                                class="uil text-icon uil-times"></i></a></li>
+                </ul>
+
+                <div class="flex justify-center items-center gap-24">
+                    <a class="navbar-hamburger lg:hidden hover:text-purple transition cursor-pointer">
+                        <i class="uil text-icon uil-apps"></i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative" id="home">
+            <div class="relative flex flex-col items-center justify-center max-w-[1020px] p-24 w-full m-auto h-screen">
+                <div class="flex justify-center sm:flex-wrap lg:flex-nowrap w-full sm:gap-48 lg:gap-126 js-scroll">
+                    <div
+                        class="flex flex-col justify-center sm:items-center md:items-start flex-initial w-510 sm:order-1 md:order-none lg:order-none">
+                        <div class="mb-18">
+                            <span
+                                class="bg-purple text-s2 font-bold text-white rounded-t-20 rounded-r-20 rounded-b-none p-12 pl-32 pr-32">Olá,
+                                eu sou</span>
+                        </div>
+                        <h1 class="font-semibold sm:text-s4 md:text-s6 lg:text-s6">Henrique
+                            Papile</h1>
+                        <p class="sm:text-s2 md:text-s3a lg:text-s3 font-medium mb-16">Front End Engineer</p>
+                        <div class="social">
+                            <ul class="flex flex-wrap gap-16">
+                                <li><a class="hover:text-purple transition duration-500"
+                                        href="https://www.linkedin.com/in/henriquepapile/" target="_blank"><i
+                                            class="uil uil-linkedin-alt text-icon"></i></a></li>
+                                <li><a class="hover:text-purple transition duration-500"
+                                        href="https://github.com/hpapile" target="_blank"><i
+                                            class="uil uil-github-alt text-icon"></i></a></li>
+                                <li><a class="hover:text-purple transition duration-500"
+                                        href="mailto:hpapile@gmail.com"><i
+                                            class="uil uil-envelope-alt text-icon"></i></a></li>
+
+                                <li><a class="hover:text-purple transition duration-500" href="https://web.whatsapp.com/send/?phone=5511953553054&text=Ol%C3%A1%20Henrique,%20vim%20pela%20sua%20pagina%20henrique.papile." target="_blank"><i
+                                            class="uil uil-whatsapp text-icon"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center image sm:order-0 lg:order-none">
+                        <img class="rounded-full object-cover sm:w-200 sm:h-200 lg:w-280 lg:h-280"
+                            src="src/images/image.webp" alt="Henrique Papile" title="Henrique Papile">
+                    </div>
+                </div>
+                <div class="botao-seta absolute sm:bottom-60 lg:bottom-0 flex justify-center w-full">
+                    <!-- <a class="p-16 transition duration-500 rounded-t-8" href="#about"> -->
+                        <div class="animate-bounce hover:text-purple transition">
+                            <i class="text-s4 uil uil-angle-down"></i>
+                        </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1020px] pt-80 pb-80 pl-24 pr-24 lg:pl-16 lg:pr-16 w-full m-auto js-scroll" id="about">
+            <div>
+                <h2 class="text-s4 font-bold mb-16">Sobre mim</h2>
+                <p class="text-s1 mb-32">Olá! Sou Henrique Papile, tenho 30 anos e resido em São Paulo, Brasil. Me formei em Análise e Desenvolvimento de Sistemas pela Uninove.
+                    <br>
+                    <br>
+                    Nos últimos 6 anos, acumulei valiosa experiência no campo do desenvolvimento Front End, dominando ferramentas como HTML, CSS, Tailwind, Bootstrap, JavaScript, WordPress e Strapi. Atualmente, estou imerso no estudo do Angular.
+                    <br>
+                    <br>
+                    Minha constante busca é contribuir para a criação de soluções inovadoras e de excelência, sempre aprimorando minhas habilidades no desenvolvimento Front End.
+                </p>
+                <div class="inline-flex flex-wrap">
+                    <a class="btn-animated press inline-flex bg-purple text-s2 font-bold p-16 rounded-8 transition duration-500"
+                        href="src/pdf/Curriculum-Henrique-Papile-da-Silva-Front End Pleno.pdf" download="Curriculum - Henrique Papile da Silva - Front End Pleno">
+                        <p class="flex items-center text-white relative gap-8 z-1">Download
+                            CV <i class="uil uil-download-alt text-icon"></i>
+                        </p>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="max-w-[1020px] pt-80 pb-80 pl-24 pr-24 lg:pl-16 lg:pr-16 w-full m-auto js-scroll" id="skills">
+            <h2 class="text-s4 font-bold mb-32 pb-32">Habilidades</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-80 gap-y-16">
+                <div class="flex flex-col gap-24">
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">HTML</span>
+                            <span class="text-s0">90%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">CSS</span>
+                            <span class="text-s0">95%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">SASS</span>
+                            <span class="text-s0">80%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">JavaScript</span>
+                            <span class="text-s0">70%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-24">
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">Angular</span>
+                            <span class="text-s0">40%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">Wordpress CMS</span>
+                            <span class="text-s0">50%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">Strapi CMS</span>
+                            <span class="text-s0">40%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-8">
+                            <span class="text-s0 font-semibold">Umbraco CMS</span>
+                            <span class="text-s0">60%</span>
+                        </div>
+                        <div class="bar bg-light-purple dark:bg-light-black rounded-8" style="height: 8px;">
+                            <div class="progress bg-purple h-full rounded-8" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1020px] pt-80 pb-80 pl-24 pr-24 lg:pl-16 lg:pr-16 w-full m-auto experiences js-scroll"
+            id="experiences">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-60">
+                <div>
+                    <h2 class="text-s4 font-bold mb-32 pb-32">Experiências Profissionais</h2>
+                    <div class="flex flex-col">
+                        <div class="relative item pb-40">
+                            <span
+                                class="bullet absolute left-0 top-0 bg-purple-bg dark:bg-purple-medium w-16 h-16 border-2 border-purple rounded-full"></span>
+                            <div class="flex flex-col gap-8 ml-40">
+                                <span class="flex items-center gap-8 text-s1"><i
+                                        class="uil uil-calendar-alt text-icon"></i> 2021 - 2023</span>
+                                <h3 class="text-s2">Front End Engineer - <span
+                                        class="font-semibold text-purple">Jellyfish</span></h3>
+                                <p class="text-s1">Desenvolvimento de soluções completas utilizando HTML, CSS,
+                                    Tailwind Css, JavaScript e Angular.</p>
+                            </div>
+                        </div>
+                        <div class="relative item pb-40">
+                            <span
+                                class="bullet absolute left-0 top-0 bg-purple-bg dark:bg-purple-medium w-16 h-16 border-2 border-purple rounded-full"></span>
+                            <div class="flex flex-col gap-8 ml-40">
+                                <span class="flex items-center gap-8 text-s1"><i
+                                        class="uil uil-calendar-alt text-icon"></i> 2018 - 2021</span>
+                                <h3 class="text-s2">Programador Front End Pleno - <span
+                                        class="font-semibold text-purple">Jellyfish</span></h3>
+                                <p class="text-s1">Desenvolvimento de soluções completas utilizando HTML, CSS,
+                                    JavaScript, .NET (C#), Wordpress e Umbraco.</p>
+                            </div>
+                        </div>
+                        <div class="relative item pb-40">
+                            <span
+                                class="bullet absolute left-0 top-0 bg-purple-bg dark:bg-purple-medium w-16 h-16 border-2 border-purple rounded-full"></span>
+                            <div class="flex flex-col gap-8 ml-40">
+                                <span class="flex items-center gap-8 text-s1"><i
+                                        class="uil uil-calendar-alt text-icon"></i> 2018</span>
+                                <h3 class="text-s2">Programador Front End Júnior - <span
+                                        class="font-semibold text-purple">Jellyfish</span></h3>
+                                <p class="text-s1">Desenvolvimento de soluções completas utilizando HTML, CSS e
+                                    JavaScript.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative item">
+                            <span
+                                class="bullet absolute left-0 top-0 bg-purple-bg dark:bg-purple-medium w-16 h-16 border-2 border-purple rounded-full"></span>
+                            <div class="flex flex-col gap-8 ml-40">
+                                <span class="flex items-center gap-8 text-s1"><i
+                                        class="uil uil-calendar-alt text-icon"></i> 2016 - 2018</span>
+                                <h3 class="text-s2">Assistente de Programador Front End -
+                                    <span class="font-semibold text-purple">Jellyfish</span>
+                                </h3>
+                                <p class="text-s1">Construção de interfaces e funcionalidades front-end.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-s4 font-bold mb-32 pb-32">Certificações</h2>
+                    <div class="flex flex-col gap-32">
+                        <div class="relative item">
+                            <span
+                                class="bullet absolute left-0 top-0 bg-purple-bg dark:bg-purple-medium w-16 h-16 border-2 border-purple rounded-full"></span>
+                            <div class="flex flex-col gap-8 ml-40">
+                                <span class="flex items-center gap-8 text-s1"><i
+                                        class="uil uil-calendar-alt text-icon"></i> 2017 - 2019</span>
+                                <h3 class="text-s2">Análise e desenvolvimento de sistemas -
+                                    <span class="font-semibold text-purple">Uninove</span>
+                                </h3>
+                                <p class="text-s1">Tecnólogo em Análise e Desenvolvimento de Sistemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1020px] pt-80 pb-80 pl-24 pr-24 lg:pl-16 lg:pr-16 w-full m-auto projects js-scroll"
+            id="projects">
+            <h2 class="text-s4 font-bold mb-32 pb-32">Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-32">
+                <div class="flex flex-col">
+                    <div class="relative">
+                        <div class="relative link block overflow-hidden rounded-8">
+                            <a href="https://trisul-sa.com.br" target="_blank">
+                                <figure class="relative transition-all duration-500">
+                                    <img class="object-cover w-full h-200 rounded-8" src="src/images/trisul-site.webp"
+                                        alt="Trisul S.A" title="Trisul S.A">
+                                    <figcaption class="absolute top-0 left-0 z-1 flex flex-col gap-8 p-16 opacity-0 items-center justify-center text-center h-full w-full rounded-8 transition duration-500">
+                                        <h3 class="text-s text-black dark:text-white font-bold">Trisul S.A</h3>
+                                        <ul class="flex flex-wrap justify-center gap-8">
+                                            <li
+                                                class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                HTML</li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">CSS
+                                            </li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                Angular</li>
+                                        </ul>
+                                    </figcaption>
+                                    <div
+                                        class="absolute top-0 left-0 h-full w-full overlay bg-light-purple dark:bg-purple-medium opacity-0 transition duration-500">
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="relative">
+                        <div class="relative link block overflow-hidden rounded-8">
+                            <a href="https://vamos.com.br" target="_blank">
+                                <figure class="relative transition-all duration-500">
+                                    <img class="object-cover w-full h-200 rounded-8" src="src/images/vamos-site.webp"
+                                        alt="Trisul S.A" title="Trisul S.A">
+                                    <figcaption class="absolute top-0 left-0 z-1 flex flex-col gap-8 p-16 opacity-0 items-center justify-center text-center h-full w-full rounded-8 transition duration-500">
+                                        <h3 class="text-s text-black dark:text-white font-bold">Vamos</h3>
+                                        <ul class="flex flex-wrap justify-center gap-8">
+                                            <li
+                                                class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                HTML</li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">CSS
+                                            </li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                Angular</li>
+                                        </ul>
+                                    </figcaption>
+                                    <div
+                                        class="absolute top-0 left-0 h-full w-full overlay bg-light-purple dark:bg-purple-dark opacity-0 transition duration-500">
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="relative">
+                        <div class="relative link block overflow-hidden rounded-8">
+                            <a href="https://www.promatre.com.br" target="_blank">
+                                <figure class="relative transition-all duration-500">
+                                    <img class="object-cover w-full h-200 rounded-8" src="src/images/promatre-site.webp"
+                                        alt="Trisul S.A" title="Trisul S.A">
+                                    <figcaption class="absolute top-0 left-0 z-1 flex flex-col gap-8 p-16 opacity-0 items-center justify-center text-center h-full w-full rounded-8 transition duration-500">
+                                        <h3 class="text-s text-black dark:text-white font-bold">Pro Matre</h3>
+                                        <ul class="flex flex-wrap justify-center gap-8">
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                HTML</li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">CSS
+                                            </li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                JavaScript
+                                            </li>
+                                            <li class="text-skill font-semibold text-black dark:text-white p-8 pt-4 pb-4 border-1 border-black dark:border-white rounded-4">
+                                                Wordpress CMS
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                    <div
+                                        class="absolute top-0 left-0 h-full w-full overlay bg-light-purple dark:bg-purple-dark opacity-0 transition duration-500">
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-[1020px] pt-80 pb-80 pl-24 pr-24 lg:pl-16 lg:pr-16 w-full m-auto js-scroll" id="contact">
+            <h2 class="text-s4 font-bold mb-32 pb-32">Contato</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-24">
+                <div class="flex items-center w-full gap-16">
+                    <i class="uil uil-envelope-alt text-s5 text-purple"></i>
+                    <div>
+                        <p class="font-semibold text-s2">E-mail</p>
+                        <a class="text-s1 hover:text-purple transition duration-500"
+                            href="mailto:hpapile@gmail.com">hpapile@gmail.com</a>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-16">
+                    <i class="uil uil-phone text-s5 text-purple"></i>
+                    <div>
+                        <p class="font-semibold text-s2">Telefone</p>
+                        <a class="text-s1 hover:text-purple transition duration-500" href="tel:(11) 95355-3054">(11)
+                            95355-3054</a>
+                    </div>
+                </div>
+                <div class="flex items-center w-full gap-16">
+                    <i class="uil uil-linkedin-alt text-s5 text-purple"></i>
+                    <div>
+                        <p class="font-semibold text-s2">Linkedin</p>
+                        <a class="text-s1 hover:text-purple transition duration-500"
+                            href="https://www.linkedin.com/in/henriquepapile/" target="_blank">@henriquepapile</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="p-80 pl-32 pr-32 lg:pl-16 lg:pr-16">
+        <div class="max-w-[1020px] w-full m-auto">
+            <p class="s1 text-center">All right reserved Henrique papile @ 2023</p>
+        </div>
+    </footer>
+
+    <div
+        class="botao-flutuante pointer-events-none fixed sm:bottom-80 lg:bottom-5 right-16 rounded-8 opacity-0 transition duration-500">
+        <a class="btn-animated press flex justify-center items-center w-11 h-11 rounded-8 bg-purple transition duration-500 z-10"
+            href="#home">
+            <i class="uil uil-arrow-up text-white text-icon pointer-events-none z-1"></i>
+        </a>
+    </div>
+</body>
+
+<script src="dist/js/index.js"></script>
+<script src="dist/js/runtime.js"></script>
+
+</html>

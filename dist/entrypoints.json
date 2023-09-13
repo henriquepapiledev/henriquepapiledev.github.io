@@ -1,0 +1,8 @@
+{
+  "index": {
+    "js": [
+      "/dist/js/runtime.js",
+      "/dist/js/index.js"
+    ]
+  }
+}

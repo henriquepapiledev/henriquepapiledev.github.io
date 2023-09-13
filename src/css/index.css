@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: thin;
+    scrollbar-color: #c7c7c7 trasparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #6F5ED5;
+    border-radius: 20px;
+    border: 2px none transparent;
+}
+
+.pointer-events-none{
+    pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.display-none{
+    @apply hidden;
+}
+
+/* Navbar */
+
+.navbar.scrolled {
+    box-shadow: 0 5px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-mobile.translate {
+    transform: translateX(0px);
+}
+
+.navbar .ativo {
+    color: #6F5ED5;
+}
+
+@media(max-width: 999px){
+    .navbar.scrolled {
+        box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.3);
+    }
+    .navbar-mobile.shadow{
+        box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Arrow-down */
+.arrow-down {
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Botão flutuante */
+.botao-flutuante.scrolled {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Botão animado */
+.btn-animated {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animated:before,
+.btn-animated:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #4E41A8;
+    border-radius: 50%;
+}
+
+.btn-animated:before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+}
+
+.btn-animated:after {
+    right: -20px;
+    transform: translate(50%, -50%);
+}
+
+.btn-animated:hover {
+    color: #fff;
+}
+
+.btn-animated:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.btn-animated:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.press:active{
+    transform: scale(.95);
+}
+
+@keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+/* Bullet */
+.experiences .item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #6F5ED5;
+    left: 7px;
+    opacity: .6;
+    transition: all .5s ease;
+}
+
+/* Projects */
+.projects .link:hover figure{
+    transform: scale(1.1);
+}
+
+.projects .link:hover figcaption,
+.projects .link:hover .overlay{
+    opacity: 0.85;
+}
+
+.js-scroll{
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(-10rem);
+}
+
+.js-scroll.ativo{
+    transform: translateY(0);
+    opacity: 1;
+}
